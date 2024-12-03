@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="IMAGES/about-img-1.png">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Online Grocery Store</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="main">
+            <div class="top-bar">
+                <div class="social-links top-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <nav class="navbar">
+                <div class="navdiv">
+                    <div class="logo"><a href="#">OnlineGroceryStore</a></div>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="products.html">PRODUCTS</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                        <button class="sign"><a href="login.html"><i class="fa-solid fa-user"></i></a></button>
+                        <button class="sign"><a href="signup.html">SIGN UP</a></button>
+                        <button class="sign cart" style="color: white; cursor: pointer;"><a href="addtocart.html"><i class="fa-solid fa-cart-shopping"></i></a></button>
+                    </ul>
+                </div>
+            </nav>
+            <section>
+                <div class="image-slider">
+                    <div class="slider">
+                        <img src="IMAGES/veg.jpg" alt="OnlineGroceryStore">
+                        <div class="caption">Vegetables</div>
+                    </div>
+                    <div class="slider">
+                        <img src="IMAGES/Fruits.jpg" alt="OnlineGroceryStore">
+                        <div class="caption">Fruits</div>
+                    </div>
+                    <div class="slider">
+                        <img src="IMAGES/bakery_1444.jpg" alt="OnlineGroceryStore">
+                        <div class="caption">Bread & Bakery</div>
+                    </div>
+
+                    <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+                    <span class="arrow next" onclick="controller(+1)">&#10095;</span>
+                </div>
+                <!-- <h1 style="text-align: center;">Best Selling Items</h1> -->
+            </section>
+            <!-- This section is Daily-essentials -->
+            <section>
+
+                <div class="new-arrivals">
+                    <h2>Daily-Essentials</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/amulmilk.jpg" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Amul Milk (1L)</h3>
+                            <h5>Rs 80/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/tea.png" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Tata Tea (1KG)</h3>
+                            <h5>Rs 349/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/oats.jpg" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Safola Oats (500g)</h3>
+                            <h5>Rs 89/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/chakkiata.jpg" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Chakki Atta (5Kg)</h3>
+                            <h5>Rs 299/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Daily-essentials section finished -->
+
+            <!-- Fruits & Vegetables Section started -->
+            <section>
+                <div class="new-arrivals">
+                    <h2>Fruits & Vegetables</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/apple.png" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Apple (1Kg)</h3>
+                            <h5>Rs 399/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/banana.png" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Banana (1Kg)</h3>
+                            <h5>Rs 99/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/cauliflower.png" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Cauliflower</h3>
+                            <h5>Rs 99/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/tomato.png" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Tomato</h3>
+                            <h5>Rs 80/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Fruits & Vegetables section finished -->
+
+            <!-- Dairy Products started -->
+
+            <section>
+                <div class="new-arrivals">
+                    <h2>Dairy Products</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/milk.webp" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Motherdairy Toned Milk</h3>
+                            <h5>Rs 31/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/paneer.webp" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Malai Paneer (500g)</h3>
+                            <h5>Rs 150/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/curd.jpeg" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Skyrup Curd (100g)</h3>
+                            <h5>Rs 95/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/cheese.jpg" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Britannia Cheese (200g)</h3>
+                            <h5>Rs 215/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Dairy products section finished -->
+
+            <!-- Bread & Bakery Section Started -->
+            <section>
+                <div class="new-arrivals">
+                    <h2>Bread & Bakery</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/bread2.jpg" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Harvest Gold Bread (700g)</h3>
+                            <h5>Rs 60/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/bun.jpg" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Burger Bun (4Pcs)</h3>
+                            <h5>Rs 125/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/muffin.jpeg" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Muffin choco (1Pc)</h3>
+                            <h5>Rs 67/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/rusk.jpg" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Rusk (400g)</h3>
+                            <h5>Rs 180/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Bread & Bakery Section finished -->
+
+            <!-- Headphone Section Started -->
+            <section>
+                <div class="new-arrivals">
+                    <h2>Meat, Fish & Eggs</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/cat-4.png" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>MB Sole Fish (500g)</h3>
+                            <h5>Rs 680/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/chicken.png" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Whole Chicken (1Kg)</h3>
+                            <h5>Rs 350/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/chicken leg pieces.png" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Chicken Legs (1Kg)</h3>
+                            <h5>Rs 700/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-top">
+                                <img src="IMAGES/eggs.jpg" alt="">
+                                <div class="overlay">
+                                    <button type="button" class="btn btn-secondary" title="Quick shop"><i
+                                            class="fa-solid fa-eye"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to wishlist"><i
+                                            class="fa-solid fa-heart"></i></button>
+                                    <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                            class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-bottom text-center">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h3>Hen White Eggs (30Pcs)</h3>
+                            <h5>Rs 280/-</h5>
+                            <button class="addtocart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Meat,Fish & Eggs Section Finshed -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Important Pages</h4>
+                            <ul>
+                                <li><a href="about.html">About Us:</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Term n Condition</a></li>
+                                <li><a href="#">Affiliate Program</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Get Helps</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Order Status</a></li>
+                                <li><a href="#">Payment Options</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Our Products</h4>
+                            <ul>
+                                <li><a href="#">Fruits & Vegetables</a></li>
+                                <li><a href="#">Dairy Products</a></li>
+                                <li><a href="#">Bread & Bakery</a></li>
+                                <li><a href="#">Meat, Fish & Eggs</a></li>
+                                <li><a href="#">Snacks & Beverages</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Follow Us:</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="bottom-bar">
+                <h3>&#169 2024 Copyright <a href="">OnlineGroceryStore.com</a></h3>
+            </div>
+        </div>
+    </div>
+    <script src="JS/home.js"></script>
+</body>
+
+</html>
